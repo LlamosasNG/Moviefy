@@ -6,7 +6,7 @@ import { GoogleSignin } from '@react-native-google-signin/google-signin';
 export const configureGoogleSignIn = () => {
 console.log('Configurando Google Sign-In');
   GoogleSignin.configure({
-    webClientId: '253964217451-oq2n5m864q47jmaamfe3pacibihklpnl.apps.googleusercontent.com', // Obtén esto de la configuración de Firebase
+    webClientId: '', // Obtén esto de la configuración de Firebase
     offlineAccess: true,
 });
 };
