@@ -1,6 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Añadir este permiso para garantizar que Credential Manager funcione correctamente -->
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
     <application
       android:name=".MainApplication"
@@ -10,6 +13,13 @@
       android:allowBackup="false"
       android:theme="@style/AppTheme"
       android:supportsRtl="true">
+      
+      <!-- Configuración para Google Sign-In con Credential Manager -->
+      <meta-data
+          android:name="com.google.android.gms.credentials.GOOGLE_SIGN_IN"
+          android:resource="@xml/credential_manager_config" />
+          
+      <!-- La actividad principal de tu aplicación -->
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
@@ -20,6 +30,16 @@
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
             <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        
+        <!-- Filtro de intención para la redirección de autenticación -->
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data
+                android:scheme="com.moviefy"
+                android:host="oauth2redirect" />
         </intent-filter>
       </activity>
     </application>
