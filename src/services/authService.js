@@ -11,6 +11,7 @@ export const configureGoogleSignIn = () => {
   const webClientId = 'id de google';
   
   GoogleSignin.configure({
+
     webClientId: webClientId,
     offlineAccess: true, // Necesario para obtener el ID token
     scopes: ['profile', 'email'], // Permisos básicos
