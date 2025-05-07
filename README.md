@@ -1,97 +1,91 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Moviefy 📺
 
-# Getting Started
+Aplicación móvil desarrollada con **React Native** para explorar y gestionar tus series favoritas utilizando la API de [TVMaze](https://www.tvmaze.com/api).
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 📲 Características
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+- 🔍 **Explora series** populares de TV.
+- 💖 **Agrega series a favoritos** con un solo toque.
+- 🌙 **Modo claro/oscuro** automático según la configuración del dispositivo.
+- 🖼 **Vista de detalles** de cada serie (con imagen, resumen y más).
+- 🔎 **Buscador de series** (consulta directa a la API de TVMaze).
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+---
 
-```sh
-# Using npm
-npm start
+## 🛠️ Tecnologías utilizadas
 
-# OR using Yarn
-yarn start
+- [React Native](https://reactnative.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [React Navigation](https://reactnavigation.org/)
+- [TVMaze API](https://www.tvmaze.com/api)
+
+---
+
+## 🚀 Instalación
+
+1. Clona el repositorio
+
+```bash
+git clone https://github.com/LlamosasNG/Moviefy.git
+cd Moviefy
 ```
 
-## Step 2: Build and run your app
+2. Instala Dependencias
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
-
-### Android
-
-```sh
-# Using npm
-npm run android
-
-# OR using Yarn
-yarn android
+```bash
+npm install
 ```
 
-### iOS
+3. Instala las dependencias de navegación (React Navigation)
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+npm install @react-navigation/native
+npm install react-native-screens react-native-safe-area-context react-native-gesture-handler react-native-reanimated
+npm install @react-navigation/bottom-tabs
+npm install @react-navigation/stack
+npm install react-native-vector-icons
 ```
 
-Then, and every time you update your native dependencies, run:
+4. Link de las fuentes de iconos (solo en Android)
 
-```sh
-bundle exec pod install
+```bash
+npx react-native link react-native-vector-icons
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+5. Ejecuta la app
 
-```sh
-# Using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
+```bash
+npx react-native run-android
+npx react-native start
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+### 📸 Funcionamiento de la app
 
-## Step 3: Modify your app
+### Home
 
-Now that you have successfully run the app, let's make changes!
+| Home A                                                | Home B                                                |
+| ----------------------------------------------------- | ----------------------------------------------------- |
+| ![Home modo oscuro](./assets/HomeScreen_darkMode.jpg) | ![Home modo claro](./assets/HomeScreen_lightMode.jpg) |
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+### Favoritos
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+<img src="./assets/FavoritesScreen_darkMode.jpg" width="300"/>
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+### Detalles
 
-## Congratulations! :tada:
+| Detalles 1                                         | Detalles 2                                         |
+| -------------------------------------------------- | -------------------------------------------------- |
+| ![Detalles_1](./assets/DetailScreen1_darkMode.jpg) | ![Detalles_2](./assets/DetailScreen2_darkMode.jpg) |
 
-You've successfully run and modified your React Native App. :partying_face:
+---
 
-### Now what?
+### 💻 Autores
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+Desarrollado por:
 
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- Hernández Hernández Roberto Isaac
+- Gonzalez Llamosas Noe Ramses
