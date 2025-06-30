@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "797151230002",
+    "project_id": "moviefy-8b6f9",
+    "storage_bucket": "moviefy-8b6f9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:797151230002:android:c744f73c01cd28203ea42b",
+        "android_client_info": {
+          "package_name": "com.llamosasng.moviefy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn0cneNv1vQt7HRQoEJt-z7HchAlUqV0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
